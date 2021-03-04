@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*overflow-x: hidden;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+/*//////////////*/
+/*navbar section*/
+/*//////////////*/
+#navigation {
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+#navigation li {
+    display: inline-block;
+    margin: 20px 20px 10px 20px;
+    font-weight: 600;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: #333;
+}
+
+#navigation a:hover {
+    color: #777;
+}
+
+/*//////////////////////////////*/
+/*titletext under navbar section*/
+/*//////////////////////////////*/
+#titleText {
+    width: 100%;
+    height: 400px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgb(178, 1, 53, 0.40),
+    rgb(178, 1, 53, 0.50)),
+    url('img/woodenconstr.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+#titleText h1 {
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    position: relative;
+}
+
+#titleText h1::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    top: 28px;
+    left: -120px;
+    background-color: #fff;
+}
+
+#titleText h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    top: 28px;
+    right: -120px;
+    background-color: #fff;
+}
+
+/*/////////////*/
+/*about section*/
+/*/////////////*/
+#about {
+    height: 100%;
+    width: 60%;
+    margin: 20px auto 75px auto;
+}
+
+#aboutContentImg {
+    width: 50%;
+    float: left;
+    height: 100% ;
+}
+
+#aboutContentImg img {
+    width: 85%;
+    min-width: 410px;
+}
+
+#aboutContentImg p {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-weight: 500;
+    font-size: 35px;
+    margin: 30px 30px 30px 0;
+    letter-spacing: 3px;
+}
+
+#aboutContent {
+    width: 50%;
+    height: 60vh;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+#aboutText {
+    width: 70%;
+    min-width: 400px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+}
+
+#aboutText span {
+    color: rgb(178, 1, 53);
+    cursor: pointer;
+}
+
+#aboutText span:hover {
+    text-decoration: underline;
+}
+
+/*///////////////*/
+/*quality section*/
+/*///////////////*/
+#qualityContent {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgb(74, 74, 74, 0.75),
+    rgb(99, 99, 99, 0.80)),
+    url('img/woodenconstr2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#qualityText {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+#qualityText h1 {
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 70px 0 30px 0;
+}
+
+#qualityText p {
+    font-weight: 300;
+    font-size: 19px;  
+}
+
+#qualityText button {
+    width: 110px;
+    height: 40px;
+    background: #fff;
+    font-weight: 700;
+    color: #333;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .1s;
+    margin-bottom: 70px;
+}
+
+#qualityText button:hover {
+    background: #555;
+    color: #fff;
+}
+
+/*/////////////*/
+/*offer section*/
+/*/////////////*/
+#offer {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#offerContent {
+    width: 51%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#offerContent h1 {
+    margin: 40px auto;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #333;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+#offerContent p {
+    font-weight: 300;
+    font-size: 19px;  
+}
+
+#offerSquares {
+    height: 90vh;
+    width: 1023px;
+    margin: 60px auto 0 auto;
+}
+
+.offerSquare {
+    width: 331px;
+    margin: 5px;
+    height: 250px;
+    background:rgb(178, 1, 53);
+    float: left;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.offerSquare h3 {
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.offerSquare:hover {
+    opacity: .85;
+}
+
+/*///////////////*/
+/*contact section*/
+/*///////////////*/
+#contactContent {
+    width: 100%;
+    height: 300px;
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(rgb(26, 22, 18, 0.50),
+    rgb(31, 23, 15, 0.50)),
+    url('img/woodenconstr3.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactText p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 27px;
+    text-align: center;
+}
+
+#contactText button {
+    width: 170px;
+    height: 50px;
+    margin: 20px;
+    background: #fff;
+    color: #333;
+    font-weight: 700;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+#contactText button:hover {
+    background: #555;
+    color: #fff;
+}
+
+#contactTextContent {
+    height: 100px;
+    width: 50%;
+    margin: 90px auto;   
+}
+
+.contactSquares {
+    width: 33.3%;
+    height: 100px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.contactSquares p {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 40px;
+}
+
+.contactSquares i {
+    font-size: 60px;
+    margin: 0 0 0 55px;
+}
+
+/*//////////////*/
+/*footer section*/
+/*//////////////*/
+#footer {
+    width: 100%;
+    height: 100%;
+    background: rgb(246, 246, 246);
+    padding: 50px 0 20px 0;
+}
+
+#footerImg {
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .1s;
+}
+
+#footerImg img {
+    height: 55px;
+}
+
+#footerImg:hover {
+    border: 2px solid #999;
+}
+
+#footerImg a {
+    margin: 0 auto;
+}
+
+#socialmediaMenu {
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+#socialmediaMenu li {
+    display: inline-block;
+    margin: 20px 20px 10px 20px;
+    font-weight: 300;
+}
+
+#socialmediaMenu ul {
+    margin-bottom: 15px;
+}
+
+#socialmediaMenu a {
+    text-decoration: none;
+    color: #333;
+}
+
+#socialmediaMenu a:hover {
+    color: #777;
+}
+
+#copyright {
+    font-size: 14px;
+    color: #555;
+    letter-spacing: 6px;
+    font-weight: 600;
+}
+
+#socialmediaMenu p {
+    margin-bottom: 50px;
+}
+
+/*////////////////////////////////////////////////////////*/
+/*/////////////////////mobile devices/////////////////////*/
+/*////////////////////////////////////////////////////////*/
+@media (max-width: 1450px) {
+    /*about section*/
+    #about {
+        height: 100%;
+        margin: 50px auto 0 auto;
+    }
+
+    #aboutContentImg {
+        width: 100%;
+        height: auto;
+    }
+
+    #aboutContent {
+        height: 100%;
+        width: 100%;
+    }
+
+    #aboutContentImg img {
+        margin: 0 auto;
+        width: 100%;
+        min-width: 410px;
+    }
+
+    #aboutContent p {
+        margin: 50px auto;
+    }
+
+    #aboutText {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1050px) {
+    /*titletext under navbar section*/
+    #titleText h1 {
+        font-size: 30px;
+    }
+
+    /*about section*/
+    #about {
+        margin: 50px auto 90px auto;
+    }
+
+    #aboutText {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #aboutText p{
+        margin-top: 20px;
+    }
+
+    #aboutContent p {
+        margin: 50px auto 0 auto;
+    }
+
+    /*offer section*/
+    #offerSquares {
+        height: 100%;
+        width: 90%;
+    }
+    
+    .offerSquare {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #offerContent {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*quality section*/
+    #qualityText {
+        width: 80%;
+    }
+}
+
+@media (max-width: 780px) {
+    /*navbar section*/
+    #navigation li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #navigation img {
+        margin-bottom: 15px;
+    }
+
+    /*titletext under navbar section*/
+    #titleText h1 {
+        font-size: 20px;
+    }
+
+    /*about section*/
+    #about {
+        width: 100%;
+        margin: 30px auto 35px auto;
+    }
+
+    #aboutContent {
+        height: 100%;
+    }
+
+    #aboutContent p {
+        font-size: 16px;
+        height: 100%;
+    }
+
+    #aboutContentImg p {
+        margin-left: 25px;
+    }
+
+    #aboutText {
+        width: 90%;
+        height: 100%;
+        font-size: 15px;
+        margin: 0 auto;
+    }
+
+    #aboutText p {
+        margin: 20px 0 20px 0;
+    }
+
+    /*offer section*/
+    #offerSquares {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .offerSquare {
+        margin-top: 15px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 585px) {
+    /*navbar section*/
+    #navigation img{
+        width: 200px;
+    }
+
+    .fa-bars {
+        top: 37px;
+        font-size: 15px;
+    }
+
+    /*titletext under navbar section*/
+    #titleText {
+        height: 275px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /*about section*/
+    #aboutText {
+        height: 100%;
+    }
+
+    #aboutContent {
+        height: 100%;
+    }
+    #aboutContent p {
+        font-size: 14px;
+        margin: 30px auto 10px auto;
+    }
+
+    /*quality section*/
+    #qualityText {
+        width: 80%;
+    }
+
+    #qualityText h1 {
+        font-size: 18px;
+    }
+
+    #qualityText p {
+        font-size: 14px;
+    }
+
+    /*offer section*/
+    #offerContent {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #offerContent h1 {
+        font-size: 18px;
+    }
+
+    #offerContent p {
+        font-size: 14px;
+    }
+}
+
